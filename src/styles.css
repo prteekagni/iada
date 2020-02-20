@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media screen and (max-width: 992px) {
+  .push-right 
+    #sidebar {
+      left: 0 !important;
+    }
+  
+}
+.main-container {
+  position: absolute;
+  top: 64px;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+.datacontainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .main-container {
+    left: 0px;
+  }
+  .datacontainer {
+    width: 90%;
+    margin: 0px;
+  }
+}
